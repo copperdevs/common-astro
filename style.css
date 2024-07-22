@@ -140,11 +140,6 @@ pre > code {
 }
 
 blockquote {
-  /* padding: 0 1em;
-  margin: 0px;
-  font-size: 1.333em;
-  border-left: solid var(--accent-light); */
-
   margin: 0;
   padding: 0 1em;
   color: rgba(var(--gray-light), 55%);
@@ -180,14 +175,12 @@ hr {
   fill: currentColor;
 }
 
-.github-icon-cls-1 {
-  fill-rule: evenodd;
-}
-.github-icon-cls-2 {
-  fill: none;
-}
-
 .github-icon {
   margin-left: auto;
   color: rgb(var(--accent-gradient));
+}
+
+.project-item-header-date{
+  margin-left: auto;
+  color: rgb(var(--gray-dark));
 }
