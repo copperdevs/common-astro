@@ -184,3 +184,8 @@ hr {
   margin-left: auto;
   color: rgb(var(--gray-dark));
 }
+
+.project-item-header-author{
+  color: rgb(var(--gray-light));
+  margin-left: 10px;
+}
