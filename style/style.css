@@ -175,6 +175,13 @@ hr {
   fill: currentColor;
 }
 
+.github-icon-cls-1 {
+  fill-rule: evenodd;
+}
+.github-icon-cls-2 {
+  fill: none;
+}
+
 .github-icon {
   margin-left: auto;
   color: rgb(var(--accent-gradient));
