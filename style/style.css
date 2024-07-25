@@ -69,7 +69,6 @@ a:visited {
 a:hover {
   color: rgb(var(--accent-gradient));
   background-color: transparent;
-  text-decoration: underline;
 }
 
 a:active {
@@ -188,4 +187,25 @@ hr {
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment */
+}
+
+.navbar-links {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-socials {
+  color: rgb(var(--gray-light));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
