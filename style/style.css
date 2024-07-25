@@ -175,24 +175,18 @@ hr {
   fill: currentColor;
 }
 
-.github-icon-cls-1 {
-  fill-rule: evenodd;
-}
-.github-icon-cls-2 {
-  fill: none;
-}
-
-.github-icon {
-  margin-left: auto;
-  color: rgb(var(--accent-gradient));
-}
-
-.project-item-header-date{
+.project-item-header-date {
   margin-left: auto;
   color: rgb(var(--gray-dark));
 }
 
-.project-item-header-author{
+.project-item-header-author {
   color: rgb(var(--gray-light));
   margin-left: 10px;
+}
+
+.project-item-header-icon {
+  color: rgb(var(--gray-light));
+  margin-left: 10px;
+  margin-right: auto;
 }
