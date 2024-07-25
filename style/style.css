@@ -166,15 +166,6 @@ hr {
   padding: 0;
 }
 
-.icon-wrapper {
-  display: inline-block;
-}
-
-.icon {
-  display: block;
-  fill: currentColor;
-}
-
 .project-item-header-date {
   margin-left: auto;
   color: rgb(var(--gray-dark));
@@ -189,4 +180,12 @@ hr {
   color: rgb(var(--gray-light));
   margin-left: 10px;
   margin-right: auto;
+}
+
+.project-category-header {
+  color: rgb(var(--gray-light));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
