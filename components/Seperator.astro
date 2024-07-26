@@ -1,0 +1,17 @@
+---
+interface Props {
+  spacing?: number;
+}
+
+const { spacing } = Astro.props;
+---
+
+<style>
+  .divider {
+    width: auto;
+    height: 4px;
+    display: inline-block;
+  }
+</style>
+
+<div class="divider" style=`height: ${spacing}px`></div>

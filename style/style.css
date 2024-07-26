@@ -194,7 +194,7 @@ hr {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
+  align-items: center;
 }
 
 .navbar-links {
@@ -211,5 +211,21 @@ hr {
 }
 
 .color-gray-light {
+  color: rgb(var(--gray-light));
+}
+
+.index-callout {
+  margin: 0;
+  padding: 10px 0px 20px 0px;
+}
+
+.index-callout-main {
+  margin: 0;
+  padding: 0;
+}
+
+.index-callout-sub {
+  margin: 0;
+  padding: 0;
   color: rgb(var(--gray-light));
 }

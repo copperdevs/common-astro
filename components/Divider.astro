@@ -3,7 +3,7 @@ interface Props {
   spacing?: string;
 }
 
-const { spacing } = Astro.props;
+const { spacing = 4 } = Astro.props;
 ---
 
 <style>
