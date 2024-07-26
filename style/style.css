@@ -209,3 +209,7 @@ hr {
   display: flex;
   align-items: center;
 }
+
+.color-gray-light {
+  color: rgb(var(--gray-light));
+}
