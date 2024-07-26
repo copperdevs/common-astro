@@ -1,12 +1,22 @@
 ---
 interface Props {
   iconName: string;
-  targetUrl: string;
+  targetUrl?: string;
 }
 
 const { iconName, targetUrl } = Astro.props;
 ---
 
-<a href={targetUrl} target="_blank">
-  {targetUrl && iconName && <i class={iconName} />}
-</a>
+{
+  targetUrl && (
+    <a href={targetUrl} target="_blank" class="color-gray-light">
+      {targetUrl && iconName && <i class={iconName} />}
+    </a>
+  )
+}
+
+{
+  !targetUrl && (
+    <span class="color-gray-light">{iconName && <i class={iconName} />}</span>
+  )
+}
