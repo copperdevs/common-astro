@@ -7,16 +7,18 @@ interface Props {
 const { iconName, targetUrl } = Astro.props;
 ---
 
-{
-  targetUrl && (
-    <a href={targetUrl} target="_blank" class="color-gray-light">
-      {targetUrl && iconName && <i class={iconName} />}
-    </a>
-  )
-}
+<span astro:before-preparation>
+  {
+    targetUrl && (
+      <a href={targetUrl} target="_blank" class="color-gray-light">
+        {targetUrl && iconName && <i class={iconName} />}
+      </a>
+    )
+  }
 
-{
-  !targetUrl && (
-    <span class="color-gray-light">{iconName && <i class={iconName} />}</span>
-  )
-}
+  {
+    !targetUrl && (
+      <span class="color-gray-light">{iconName && <i class={iconName} />}</span>
+    )
+  }
+</span>
