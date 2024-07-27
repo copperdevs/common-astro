@@ -1,0 +1,19 @@
+---
+interface Props {
+  badUrls: string[];
+  targetUrl: string;
+}
+
+const { badUrls, targetUrl } = Astro.props;
+---
+
+<script is:inline define:vars={{ badUrls, targetUrl }}>
+  document.addEventListener("DOMContentLoaded", checkUrl);
+  document.addEventListener("astro:after-swap", checkUrl);
+
+  function checkUrl() {
+    if (badUrls.includes(document.location.host)) {
+      document.location.href = `https://${targetUrl}${document.location.pathname}`;
+    }
+  }
+</script>
