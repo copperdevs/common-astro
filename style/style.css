@@ -230,3 +230,66 @@ hr {
   padding: 0;
   color: rgb(var(--gray-light));
 }
+
+@media screen and (max-width: 480px) {
+  .show-on-desktop {
+    display: none;
+  }
+
+  .mobile-spacing {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(var(--black));
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+}
+
+@media screen and (max-height: 480px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.top-right {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
