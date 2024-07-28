@@ -78,20 +78,6 @@ a:active {
   text-decoration: underline;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tag {
-  margin: 0.25em;
-  border: dotted 1px #a1a1a1;
-  border-radius: 0.5em;
-  padding: 0.5em 1em;
-  font-size: 1.15em;
-  background-color: #f8fcfd;
-}
-
 strong,
 b {
   font-weight: 700;
@@ -99,10 +85,6 @@ b {
 
 p {
   margin-bottom: 1em;
-}
-
-.prose p {
-  margin-bottom: 2em;
 }
 
 textarea {
@@ -238,7 +220,7 @@ hr {
 }
 
 .index-projects-spacing {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px) {
