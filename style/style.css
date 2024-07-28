@@ -231,6 +231,16 @@ hr {
   color: rgb(var(--gray-light));
 }
 
+.index-projects-header {
+  color: rgb(var(--gray-light));
+  margin: 0;
+  padding: 0;
+}
+
+.index-projects-spacing {
+  margin-top: 28px;
+}
+
 @media screen and (max-width: 480px) {
   .show-on-desktop {
     display: none;

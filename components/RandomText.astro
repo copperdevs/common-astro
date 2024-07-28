@@ -1,0 +1,9 @@
+---
+interface Props {
+  options: string[];
+}
+
+const { options } = Astro.props;
+---
+
+<span>{options[Math.floor(Math.random() * options.length)]}</span>
