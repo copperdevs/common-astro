@@ -54,6 +54,10 @@ h1 {
   background-position: 0%;
 }
 
+a {
+  transition: all ease-in-out 0.3s;
+}
+
 a:link {
   color: rgb(var(--accent-light));
   background-color: transparent;
@@ -295,4 +299,40 @@ hr {
   margin-right: 0px;
   margin-left: 0px;
   padding: 0px;
+}
+
+.faq {
+  margin: 0 auto;
+  width: 55%;
+  padding: 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.faq-title span {
+  color: var(--ascent-color);
+}
+
+.faq-question {
+  margin: 10px 0;
+  font-size: 28px;
+  transition: all ease-in-out 0.3s;
+}
+
+.faq-question:hover {
+  cursor: pointer;
+  color: var(--ascent-color);
+}
+
+.faq-answer {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 20px;
+  margin: 20px 0;
+  display: none;
+  text-align: justify;
 }
