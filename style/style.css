@@ -284,3 +284,15 @@ hr {
   top: 1em;
   right: 1em;
 }
+
+.no-spacing {
+  margin: 0px;
+  padding: 0px;
+}
+
+.no-spacing-but-top {
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+}
