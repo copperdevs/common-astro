@@ -301,38 +301,32 @@ hr {
   padding: 0px;
 }
 
-.faq {
-  margin: 0 auto;
-  width: 55%;
-  padding: 20px;
-}
-
-.faq-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 50px;
-}
-
-.faq-title span {
-  color: var(--ascent-color);
+.no-spacing-but-left {
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .faq-question {
-  margin: 10px 0;
-  font-size: 28px;
   transition: all ease-in-out 0.3s;
+  color: rgb(var(--accent-light));
 }
 
 .faq-question:hover {
   cursor: pointer;
-  color: var(--ascent-color);
+  color: white;
 }
 
 .faq-answer {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 20px;
-  margin: 20px 0;
   display: none;
-  text-align: justify;
+  margin-left: 24px;
+}
+
+.faq-answer-ident{
+  margin-left: 24px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
 }
