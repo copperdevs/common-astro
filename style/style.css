@@ -18,7 +18,8 @@
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 
-  --transition: all ease-in-out 0.3s;
+  --transition: all ease-in-out 0.15s;
+  --text-glow: rgba(255, 255, 255, 0.45) 0px 0px 26px;
 }
 
 html {
@@ -57,13 +58,12 @@ h1 {
   background-size: 400%;
   background-position: 0%;
   transition: var(--transition);
-  font-size: 100%;
 }
 
 .text-gradient:hover {
   background-position: 100%;
   color: white;
-  font-size: 110%;
+  text-shadow: var(--text-glow);
 }
 
 a {
@@ -86,6 +86,7 @@ a:hover {
   color: rgb(var(--accent-gradient));
   background-color: transparent;
   text-decoration: underline;
+  text-shadow: var(--text-glow);
 }
 
 a:active {
@@ -353,4 +354,12 @@ hr {
 
 .white-hover:hover {
   color: white;
+}
+
+.glow-hover {
+  transition: var(--transition);
+}
+
+.glow-hover:hover {
+  text-shadow: var(--text-glow);
 }
