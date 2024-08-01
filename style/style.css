@@ -17,6 +17,8 @@
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
+
+  --transition: all ease-in-out 0.3s;
 }
 
 html {
@@ -37,6 +39,7 @@ main {
   color: white;
   font-size: 20px;
   line-height: 1.6;
+  cursor: default;
 }
 
 h1 {
@@ -53,10 +56,18 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-size: 400%;
   background-position: 0%;
+  transition: var(--transition);
+  font-size: 100%;
+}
+
+.text-gradient:hover {
+  background-position: 100%;
+  color: white;
+  font-size: 110%;
 }
 
 a {
-  transition: all ease-in-out 0.3s;
+  transition: var(--transition);
 }
 
 a:link {
@@ -191,11 +202,15 @@ hr {
 }
 
 .navbar-socials {
-  color: rgb(var(--gray-light));
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+.navbar-socials:hover {
+  text-decoration: none;
 }
 
 .color-gray-light {
@@ -252,7 +267,7 @@ hr {
   left: 0;
   background-color: rgb(var(--black));
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: var(--transition);
 }
 
 .overlay-content {
@@ -267,7 +282,7 @@ hr {
   padding: 8px;
   font-size: 36px;
   display: block;
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 .overlay .closebtn {
@@ -310,7 +325,7 @@ hr {
 }
 
 .faq-question {
-  transition: all ease-in-out 0.3s;
+  transition: var(--transition);
   color: rgb(var(--accent-light));
 }
 
@@ -330,4 +345,12 @@ hr {
   margin-right: 0px;
   margin-top: 0px;
   padding: 0px;
+}
+
+.white-hover {
+  transition: var(--transition);
+}
+
+.white-hover:hover {
+  color: white;
 }
