@@ -1,0 +1,30 @@
+---
+interface Props {
+  links: string[];
+  texts: string[];
+  defaultText: string;
+}
+
+const { links, texts, defaultText } = Astro.props;
+---
+
+<script is:inline define:vars={{ links, texts, defaultText }}>
+  function getText(links, texts, defaultText) {
+    var index = 0;
+
+    if (links.includes(document.location.host))
+      index = links.indexOf(document.location.host);
+    else index = NaN;
+
+    if (Number.isNaN(index)) return defaultText;
+    else return texts[index];
+  }
+
+  document.addEventListener("DOMContentLoaded", setTitle);
+  document.addEventListener("astro:after-swap", setTitle);
+
+  function setTitle() {
+    var text = getText(links, texts, defaultText);
+    document.title = document.title + " | " + text;
+  }
+</script>
