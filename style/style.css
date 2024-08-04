@@ -84,7 +84,6 @@ a:visited {
 
 a:hover {
   color: rgb(var(--accent-gradient));
-  background-color: transparent;
   text-decoration: underline;
   text-shadow: var(--text-glow);
 }
@@ -231,7 +230,6 @@ hr {
 .index-callout-sub {
   margin: 0;
   padding: 0;
-  color: rgb(var(--gray-light));
 }
 
 .index-projects-header {
@@ -362,4 +360,8 @@ hr {
 
 .glow-hover:hover {
   text-shadow: var(--text-glow);
+}
+
+.color-white {
+  color: white;
 }
