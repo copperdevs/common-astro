@@ -11,9 +11,30 @@ const { badUrls, targetUrl } = Astro.props;
   document.addEventListener("DOMContentLoaded", checkUrl);
   document.addEventListener("astro:after-swap", checkUrl);
 
-  function checkUrl() {
+  async function checkUrl() {
     if (badUrls.includes(document.location.host)) {
-      document.location.href = `https://${targetUrl}${document.location.pathname}`;
+      const newTargetSite = `https://${targetUrl}${document.location.pathname}`;
+
+      const siteExists = await urlExists(newTargetSite);
+
+      if (siteExists) document.location.href = newTargetSite;
+    }
+  }
+
+  async function urlExists(url) {
+    try {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        console.log(`URL does not exist: ${url}`);
+        return false;
+      }
+
+      console.log(`URL exists: ${url}`);
+      return true;
+    } catch (error) {
+      console.log(`Error checking URL: ${error}`);
+      return false;
     }
   }
 </script>
