@@ -384,3 +384,16 @@ hr {
 .auth-button:hover {
   box-shadow: var(--box-shadow);
 }
+
+.profile-picture {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.profile-page-profile-picture {
+  border-radius: 50%;
+  width: 25px;
+  display: inline-block; 
+  vertical-align: middle;
+  transform: translateY(-5px);
+}
