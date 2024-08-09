@@ -366,3 +366,34 @@ hr {
 .color-white {
   color: white;
 }
+
+.auth-button {
+  background-color: rgb(var(--gray-dark));
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8%;
+  transition: var(--transition);
+}
+
+.auth-button:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.profile-page-profile-picture {
+  border-radius: 50%;
+  width: 25px;
+  display: inline-block; 
+  vertical-align: middle;
+  transform: translateY(-5px);
+}
