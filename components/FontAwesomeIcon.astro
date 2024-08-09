@@ -29,9 +29,7 @@ const textLabel = `${urlLabel} On click the icon leads to ${targetUrl}.`;
 
   {
     !targetUrl && (
-      <span class="color-gray-light">
-        {iconName && <i class={iconName} aria-label={textLabel} />}
-      </span>
+      <span>{iconName && <i class={iconName} aria-label={textLabel} />}</span>
     )
   }
 </span>
