@@ -1,10 +1,14 @@
 ---
+interface Props {
+  projectId: string;
+}
 
+const { projectId } = Astro.props;
 ---
 
 <script
   is:inline
   data-astro-rerun
   astro:before-preparation
-  src="https://kit.fontawesome.com/45b7384014.js"
+  src=`https://kit.fontawesome.com/${projectId}.js`
   crossorigin="anonymous"></script>

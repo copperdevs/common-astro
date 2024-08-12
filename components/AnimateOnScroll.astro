@@ -1,0 +1,27 @@
+---
+import AOS from "simple-aos";
+---
+
+<script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script is:inline>
+  AOS.init();
+
+  document.addEventListener("DOMContentLoaded", aosReload);
+  document.addEventListener("astro:after-swap", aosReload);
+
+  async function aosReload() {
+    AOS.refreshHard();
+  }
+</script>
+<script>
+  import AOS from "simple-aos";
+  AOS.init();
+
+  document.addEventListener("DOMContentLoaded", aosReload);
+  document.addEventListener("astro:after-swap", aosReload);
+
+  async function aosReload() {
+    AOS.refreshHard();
+  }
+</script>
