@@ -380,24 +380,6 @@ hr {
   color: white;
 }
 
-.auth-button {
-  background-color: rgb(var(--gray-dark));
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8%;
-  transition: var(--transition);
-}
-
-.auth-button:hover {
-  box-shadow: var(--box-shadow);
-}
-
 .profile-picture {
   border-radius: 50%;
   width: 45px;
@@ -533,6 +515,33 @@ body {
 }
 
 .sign-out-button:hover {
+  color: rgb(var(--accent-gradient));
+  text-shadow: var(--text-glow);
+  background-position: 100%;
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+.auth-button {
+  border: none;
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  cursor: grab;
+  font-weight: bold;
+  color: rgb(var(--accent-light));
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px 16px;
+}
+
+.auth-button:hover {
   color: rgb(var(--accent-gradient));
   text-shadow: var(--text-glow);
   background-position: 100%;
