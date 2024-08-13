@@ -20,6 +20,13 @@
 
   --transition: all ease-in-out 0.15s;
   --text-glow: rgba(255, 255, 255, 0.45) 0px 0px 26px;
+
+  --red-gradient: linear-gradient(
+    45deg,
+    red,
+    orange 55%,
+    yellow 80%
+  );
 }
 
 html {
@@ -422,18 +429,19 @@ hr {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(var(--gray-dark));
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .65);
   right: 0;
   z-index: 1;
   color: white;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: rgb(var(--gray-light), 5%);
 }
 
 .dropdown-content a {
   padding: 12px 16px;
-  /* text-decoration: none; */
   display: block;
 }
 
@@ -494,4 +502,40 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.sign-out-button-center-parent {
+  display: flex;
+  justify-content: left;
+}
+
+.sign-out-button {
+  border: none;
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  cursor: grab;
+  font-weight: bold;
+  color: rgb(var(--accent-light));
+  background-color: transparent;
+  background-image: var(--red-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px 16px;
+}
+
+.sign-out-button:hover {
+  color: rgb(var(--accent-gradient));
+  text-shadow: var(--text-glow);
+  background-position: 100%;
+  color: white;
+  -webkit-text-fill-color: white;
 }
