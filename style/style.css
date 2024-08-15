@@ -400,7 +400,6 @@ hr {
 }
 
 .dropdown {
-  float: right;
   position: relative;
   transition: var(--transition);
   z-index: 1;
