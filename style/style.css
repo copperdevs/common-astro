@@ -571,6 +571,16 @@ body {
   text-shadow: var(--text-glow);
 }
 
+.color-gray-light-white-hover {
+  color: rgb(var(--gray-light));
+  transition: var(--transition);
+}
+
+.color-gray-light-white-hover:hover {
+  color: white;
+  text-shadow: var(--text-glow);
+}
+
 .link-tree-link-list-headers {
   width: 50%;
   height: 60px;
