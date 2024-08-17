@@ -570,3 +570,7 @@ body {
   padding: 0;
   display: inline;
 }
+
+.text-underline{
+  text-decoration: underline;
+}
