@@ -1,10 +1,10 @@
 ---
 interface Props {
-  projectId?: string;
+  websiteId: string;
 }
 
-const { projectId } = Astro.props;
+const { websiteId } = Astro.props;
 ---
 
-<script defer src="https://cloud.umami.is/script.js" data-website-id={projectId}
+<script defer src="https://cloud.umami.is/script.js" data-website-id={websiteId}
 ></script>
