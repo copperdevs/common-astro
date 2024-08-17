@@ -548,3 +548,25 @@ body {
   color: white;
   -webkit-text-fill-color: white;
 }
+
+.color-gray-dark {
+  color: rgb(var(--gray-dark));
+}
+
+.color-gray-dark-white-hover {
+  color: rgb(var(--gray-dark));
+  transition: var(--transition);
+}
+
+.color-gray-dark-white-hover:hover {
+  color: white;
+  text-shadow: var(--text-glow);
+}
+
+.link-tree-link-list-headers {
+  width: 50%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
